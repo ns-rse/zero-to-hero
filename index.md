@@ -41,6 +41,7 @@ git clone git@github.com:ns-rse/collaborative_github_exercise.git
 7. Save, commit and push your changes to _your_ fork of the repository.
 
 ### Create a Pull Request
+
 Now create a pull request from your fork on GitHub to the `master` (or `main`) branch of the base repository from which
 the fork was made (`RSE-Sheffield/collaborative_github_exercise`). To do this...
 
@@ -53,8 +54,51 @@ the fork was made (`RSE-Sheffield/collaborative_github_exercise`). To do this...
 
 4. Click on "_Create Pull Request_".
 
+### Pull Requestes from GitKraken
+
+From Git Kraken you can add a Remote source to your repository which makes it easier for you to make changes locally and
+create pull requests to the repository from which you made your fork.
+
+Branches can be aligned by dragging and dropping the icons from one branch to another.
+
+## Advanced Collaboation Through GitHub
+
+The basis of this is the concept of "branches" where you work on an isolated set of the code that is known (or should)
+work.
+
+The basis for the work is the [RSE-Sheffield/python-calculator](https://github.com/RSE-Sheffield/python-calculator)
+which one person should copy using the "_Use this template_" button to make a copy to their account. Then protect the
+branch by...
+
+1. _Settings > Branches_ and select teh `main` branch to _Require pull requst before merging_ and set a number fo
+   _Require approvals_.
+
+2. Next add _Settings > Collaborators_ and add your colleagues GitHub usernames.
+
+3. The owner of the project should create a branch and modify `setup.cfg` with their details (author, author email,
+   url, Bug Tracker url), save, commit and push. On first push the branch won't exist remotely and so the name will
+   be set (GitKraken will ask this automatically, just as `git` does at the command line).
+
+4. Pull requests can be made straight from Git Kraken, once made they need assigning to a team member who can then
+   approve which will allow someone to merge the pull request.
+
+5. We now create issues _Issues > New Issue_, for this exercise there are three issue templates and they are assigned to
+   different individuals. They should use the checklist to go through each of the tasks before submitting pull requests
+   which are then reviewed.
+
+6. Mistakes that cause tests to error can arise, particularly for those unfamiliar with Python and these can be reviewed
+   with feedback comments/suggestions.
+
+7. If things are being done in parallel then it should result in a merge conflict that can then be resolved through
+   GitHub. Once resolved the pull requests can be merged and the branches deleted.
+
+8. Finally users can fast-forward their local copies.
+
+
+
 # Links
 
 * [GitKraken : Zero to Hero](https://srse-git-github-zero2hero.netlify.app/)
 * [GitHub Pages](https://pages.github.com)
 * [Markdown](https://www.markdownguide.org)
+* [Class Notepad](https://docs.google.com/document/d/1-CkHO417wtfJZ35X4q5tk_hcgP9W3mfEG5AsN2SIU1A/edit#)
