@@ -1,3 +1,8 @@
 # TODO
 
 Tasks I need to complete to be a hero, not a zero.
+
+* TODO Complete the course.
+* TODO Understand Cherry Picking.
+* TODO Master rebasing.
+* TODO Profit.
